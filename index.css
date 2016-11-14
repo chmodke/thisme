@@ -1,21 +1,26 @@
-*{
+@font-face {
+    font-family: myfont;
+    src: url(fzlthjt.ttf);
+}
+
+* {
     padding: 0px;
     margin: 0px;
-    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+	font-family:Hiragino Sans GB,STHeiti,Microsoft Yahei,sans-serif,myfont;
 }
 
 body {
     width: 100%;
     background-image: url("bg.jpg");
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size:cover;
+    background-size: cover;
 }
 
-.outer{
+.outer {
     /*border: 1px solid black;*/
     /*margin: 10px;*/
-    width: 80%;
+    width: 980px; /*不使用自适应宽度*/
     margin: auto;
     /*padding-top: 50px;*/
     padding-bottom: 50px;
@@ -28,25 +33,25 @@ div {
     margin-right: auto;
 }
 
-a{
+a {
     /*text-decoration: underline;*/
     text-decoration: none;
 }
 
-a:link{
-    color:blue;
+a:link {
+    color: blue;
 }
 
-a:visited{
-    color:green;
+a:visited {
+    color: green;
 }
 
-a:hover{
-    color:yellow;
+a:hover {
+    color: yellow;
 }
 
-a:active{
-    color:red;
+a:active {
+    color: red;
 }
 
 img {
@@ -57,13 +62,14 @@ div.split {
     width: 100%;
 }
 
-table{
+table {
     width: 100%;
-    font-size:16px;
+    font-size: 16px;
     border-width: 0px;
     border-color: #666666;
     border-collapse: collapse;
 }
+
 table td {
     /*background-color: #ffffff;*/
     border-width: 0px;
@@ -72,35 +78,65 @@ table td {
 }
 
 table.content {
-    color:#000000;
+    color: #000000;
 }
+
 table.content td {
     padding-left: 18px;
 }
-table.content td.l-left{
+
+table.content td.l-left {
     padding-left: 3px;
 }
 
 table.split {
-    color:#ffffff;
+    color: #ffffff;
 }
+
 table.split td {
     padding-left: 0px;
 }
 
-hr{
-    color:#ffffff;
+hr {
+    color: #ffffff;
 }
 
 ul {
     width: 100%;
 }
+
 ul li {
     width: 100%;
 }
-ul li.one{
-    list-style-type : none;
+
+ul li.one {
+    list-style-type: none;
 }
-ul li.two{
-    list-style-type : square;
+
+ul li.two {
+    list-style-type: square;
 }
+
+.header_top {
+    text-align: center;
+}
+
+#width_wranning {
+    color: yellow;
+}
+
+/*@media screen and (max-width: 980px){*/
+/*.outer{width: 980px}*/
+/*}*/
+/*!*1024*!*/
+/*@media screen and (min-width: 980px){*/
+/*.outer{width: 95.7%}*/
+/*}*/
+/*!*1366*!*/
+/*@media screen and (min-width: 1024px){*/
+/*.outer{width: 71.7%}*/
+/*}*/
+/*!*1080*!*/
+/*@media screen and (min-width: 1366px){*/
+/*.outer{width: 51%}*/
+/*}*/
