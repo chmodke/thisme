@@ -88,6 +88,11 @@ table.content td {
 table.content td.l-left {
     padding-left: 3px;
 }
+table.content td.td_underline {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #ffffff;
+}
 
 table.split {
     color: #ffffff;
@@ -114,6 +119,9 @@ ul li.one {
 }
 
 ul li.two {
+    list-style-type: square;
+}
+ul li.three {
     list-style-type: square;
 }
 
